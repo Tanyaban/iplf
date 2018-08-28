@@ -107,7 +107,12 @@
 </plugin> 
 </plugins>
 	</build>
-	<profiles>
+	
+	<properties>
+			<maven.compiler.source>1.8</maven.compiler.source>
+			<maven.compiler.target>1.8</maven.compiler.target>
+		</properties>
+<profiles>
 <profile>
 <id>sonar</id>
 <properties>
@@ -118,9 +123,4 @@ http://13.251.143.66:9000
 </properties>
 </profile>
 </profiles>
-	<properties>
-			<maven.compiler.source>1.8</maven.compiler.source>
-			<maven.compiler.target>1.8</maven.compiler.target>
-		</properties>
-	
 </project>
